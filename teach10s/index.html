@@ -1,0 +1,103 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="question-stats">
+    <p>Score <span id="correct-answers">0</span></p>
+    <!--  / <span id="total-questions">0</span> -->
+  </div>
+
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div id="slides-container" class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide" data-swiper-autoplay="000">
+        <div class="startingScreen">
+          <button onClick="swiper.slideNext()" class="custom-btn btn-12"><span>Start!</span><span>QuizMe</span></button>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <!-- <div class="swiper-slide" data-swiper-autoplay="4000">
+        <div class="questionItem">
+          <video
+            auto-play="true"
+            id="my-video"
+            class="video-js"
+            controls="false"
+            preload="auto"
+            width="640"
+            height="264"
+            poster=""
+            data-setup="{}"
+          >
+            <source src="videos/video2.mp4" type="video/mp4" />
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a
+              web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank"
+                >supports HTML5 video</a
+              >
+            </p>
+          </video>
+          <div class="questionItem__statement">
+            <p>
+              First step is to install the ___________.
+            </p>
+          </div>
+          <div class="questionItem__options"> 
+            <div class="questionItem__option questionItem__option-left correct">rear wheel</div>
+            <div class="questionItem__option questionItem__option-right incorrect">front wheel</div>
+          </div>
+        </div>
+      </div> -->
+      
+    </div>
+  </div>
+
+  <!-- https://codepen.io/charlenopires/pen/JMoxdb -->
+
+
+  <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
